@@ -1,2 +1,4 @@
 # teamfrancebb
-The drupal version themes and modules specific for France bloodbowl the french website (Drupal 8)
+PHP based website.
+Vanilla js
+Php home made classes.
