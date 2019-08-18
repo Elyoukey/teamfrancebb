@@ -1,0 +1,671 @@
+/*
+RESET CSS
+*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: arial, helvetica sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6,
+nav, ol, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li div{
+    display: inline;
+}
+
+table {
+    border-spacing: 2px;
+    border-collapse: separate;
+}
+
+table thead th {
+    background: #FFCC00;
+}
+
+table tr:nth-child(odd) {
+    background: #F4F4F4;
+}
+
+table tr:nth-child(even) {
+    background: #FDFDFD;
+}
+
+table tr td {
+    padding: 2px;
+    margin: 2px;
+}
+
+form{
+    width: 100%;
+}
+form.mainpage{
+    padding: 50px 20px 70px;
+}
+
+label{
+    font-weight: bold;
+    display: block;
+}
+/*
+FONT
+*/
+@font-face {
+    font-family: gutcruncher;
+    src: url(../fonts/Gutcruncher.otf);
+}
+
+/**/
+body {
+    background: #8B8B8B;
+    font-size: 0.8em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: #CC6600;
+}
+
+article {
+    border-bottom: 1px solid black;
+}
+
+.small{
+    font-size: 0.7em;
+}
+/******************************
+PAGE CONTAINER
+*/
+#edf8-page-container {
+    margin: auto;
+    width: 835px;
+    position: relative;
+
+    box-shadow: -12px 0 8px -4px #000000;
+
+}
+
+#edf8-page-container .pompom {
+    position: absolute;
+    right: -170px;
+    top: -115px;
+    width: 402px;
+    height: 610px;
+    background: url(../images/pompom.png) no-repeat;
+}
+
+#edf8-page-container .pompom.behind {
+    z-index:0;
+}
+#edf8-page-container .pompom.before {
+    z-index:2;
+    opacity: 0.3;
+}
+
+
+#edf8-page-container .logo {
+    display: block;
+    width: 187px;
+    height: 160px;
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    background: url(../images/logo.png) no-repeat;
+
+}
+/*
+ Messages
+*/
+.messages{
+    font-size: 1.2em;
+    position:fixed;
+    top: 45px;
+    left: 30%;
+    width: 30%;
+    background: #FCF2B2;
+    border: 3px solid #DD0014;
+    z-index: 3;
+    padding: 12px;
+    cursor: pointer;
+}
+/******************************
+HEADER
+*/
+#edf8-header {
+    background: url(../images/bandeau.png) no-repeat left top;
+    height: 124px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#edf8-header nav {
+    position: absolute;
+    top: 97px;
+    width: 100%;
+    padding-left: 230px;
+    overflow: hidden;
+
+}
+#edf8-header nav:hover{
+    height: 230px;
+    z-index: 2;
+}
+
+#edf8-header nav ul {
+
+    display: block;
+    margin: 0;
+}
+#edf8-header nav ul{
+
+}
+
+#edf8-header nav ul li {
+    display: inline-block;
+}
+
+#edf8-header nav ul li {
+    float: left;
+    position: relative;
+    border: 1px solid #000000;
+    margin: 0;
+    background: linear-gradient(
+            to bottom,
+            #f49c20,
+            #f0dd67
+    );
+    border-radius: 0 0 7px 7px;
+    padding: 5px 7px 2px 7px;
+    color: black;
+
+    font-family: gutcruncher;
+    letter-spacing: 1px;
+
+}
+
+#edf8-header nav > ul > li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: red;
+    box-shadow: 0 0 2px 2px #0a0a0a;
+}
+
+#edf8-header nav ul li a {
+    color: black;
+}
+#edf8-header nav ul li ul {
+    position: absolute;
+    border-radius: 0;
+    border: 1px solid #000000;
+    top: 24px;
+    left:0;
+
+}
+#edf8-header nav ul li ul{
+    display: none;
+
+}
+#edf8-header nav ul li:hover ul{
+    display: block;
+}
+#edf8-header nav ul li ul ,
+#edf8-header nav ul li ul li{
+    background: #ddd8c8;
+    white-space: nowrap;
+    border-radius: 0;
+    font-family: arial, helvetica sans-serif;
+    letter-spacing: 0;
+}
+#edf8-header nav ul li ul li{
+    border: none;
+    border-top: 1px solid #afafaf;
+    border-left: 1px solid #afafaf;
+    border-right: 1px solid #afafaf;
+}
+#edf8-header nav ul li ul li:hover{
+    background: #f7f3e7;
+}
+/*
+MAIN CONTAINER
+*/
+#edf8-layout-container {
+
+    margin: 0 auto;
+    padding: 5px 6px;
+    background-color: #DD0014;
+    background: linear-gradient(
+            to bottom,
+            #970808,
+            #970808 50%,
+            #DD0014 50%,
+            #DD0014
+    );
+    background-size: 100% 3px;
+
+    box-shadow: 12px 0 15px -4px #000000;
+    min-height: 1000px;
+
+}
+
+/* BLOCKS */
+#edf8-layout-container .block {
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin: 0 3px 3px 0;
+    padding: 0;
+    position: relative;
+    z-index:1;
+}
+
+#edf8-layout-container .block h2 {
+
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100%;
+    margin: 0;
+    padding: 2px 4px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #000000;
+    background: linear-gradient(
+            to bottom,
+            #f0dd67,
+            #f49c20
+    );
+
+}
+
+#edf8-layout-container .block .picto{
+    display: none; /* set to display block  in block where it is used */
+
+    background-image: url(../images/acces_cle.gif);
+    background-position: 0 1px;
+    background-repeat: no-repeat;
+
+    float: left;
+    height: 16px;
+    width: 16px;
+}
+#edf8-layout-container .block.login .picto{
+    display: block;
+    background-image: url(../images/acces_cle.gif);
+}
+
+
+
+#edf8-layout-container .block > div,
+#edf8-layout-container .block > form {
+    padding: 5px;
+}
+
+#edf8-layout-container .block .details{
+    text-align: right;
+}
+
+/* links */
+#edf8-layout-container .block .links li{
+
+    margin: 30px 5px;
+    background: linear-gradient(
+            to bottom,
+            #FEB30B,
+            #FFFDFA
+    );
+    padding: 2px 4px 0px 0px;
+
+    color: #000;
+    text-align: right;
+    border: 1px solid #000;
+    border-top-right-radius: 15px;
+    position: relative;
+
+
+}
+
+#edf8-layout-container .block .links li a{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.8em;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+#edf8-layout-container .block .links li img{
+    position: absolute;
+    left: 3px;
+    top: -17px;
+}
+#edf8-layout-container .block .links li.fumbbl img{
+    position: absolute;
+    left: 3px;
+    top: -17px;
+}
+
+
+/* tournois homepage*/
+#edf8-layout-container .block .tournamentblock{
+
+    position: relative;
+    padding: 5px 0;
+    border-bottom: 1px solid silver;
+
+}
+
+#edf8-layout-container .block .tournamentblock .sticker{
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+#edf8-layout-container .block .tournamentblock .name{
+    padding-left: 23px;
+}
+
+#edf8-layout-container .block .tournamentblock .date{
+    text-align: right;
+}
+#edf8-layout-container .block .tournamentblock .city{
+    font-size: 0.8em;
+}
+
+/* PALMARES BLOCK */
+#edf8-layout-container .block .palmaresblock{
+    margin: 3px 0;
+    padding: 5px 3px;
+    border: 1px solid silver;
+    -background: #FCF2B2;
+    border-radius: 3px;
+
+}
+#edf8-layout-container .block .palmaresblock .name {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+}
+#edf8-layout-container .block .palmaresblock .date {
+    text-align: right;
+    font-size: 0.8em;
+
+}
+#edf8-layout-container .block .palmaresblock .podium {
+
+}
+#edf8-layout-container .block .palmaresblock .podium .ranking{
+    font-size: 1.5em;
+}
+
+#edf8-layout-container .block .palmaresblock .podium .coach{
+    line-height: 15px;
+    padding: 0;
+    font-size: 0.9em;
+}
+#edf8-layout-container .block .palmaresblock img.roster {
+    width: 18px;
+    vertical-align: text-bottom;
+    margin: 0 5px;
+}
+
+/*LEFT COLUMN */
+#edf8-layout-container #edf8-left-column {
+
+    width: 25%;
+    float: left;
+    margin: 0;
+    padding: 0;
+
+    position: relative; /* for pompom positioning*/
+    z-index:1;/* for pompom positioning*/
+}
+
+/*
+CONTENT
+*/
+#edf8-layout-container #edf8-main {
+    float:left;
+    width: 75%;
+    background: white;
+    border: 1px solid #000000;
+    border-radius: 5px;
+
+    position: relative; /* for pom pom positionning */
+    z-index: 1;/* for pom pom positionning */
+}
+
+#edf8-layout-container #edf8-main h1 {
+
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background: url(../images/h1.png);
+    border-radius: 5px 5px 0 0;
+    padding: 3px 5px;
+    font-size: 1.3em;
+}
+
+#edf8-layout-container #edf8-main .content {
+    width: 100%;
+    padding: 3px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+#edf8-layout-container #page-title {
+    margin: 0 -20px 10px -10px;
+}
+
+#edf8-layout-container #edf8-main .admin{
+    padding: 3px 0;
+
+}
+
+
+/* FOOTER */
+footer{
+    clear: both;
+    color: #fff;
+    text-align: center;
+    font-size: 0.85em;
+    padding-top: 40px;
+}
+
+/* CDF view */
+
+
+/* coach list */
+.coachlist{
+    width: 100%;
+}
+.coachlist .name{
+    text-align: center;
+    font-weight:bold;
+
+}
+.coachlist.full .name{
+    width: 35%;
+}
+
+.coachlist .cdf_active{
+
+}
+.coachlist .cdf_inactive{
+    color: #888888;
+}
+
+/* tournaments highlight list*/
+#edf8_map{
+    background: cornflowerblue;
+    float: left;
+    width: 100%;
+    height: 400px;
+}
+.tournamentslist .passed{
+    
+    opacity: 0.5;
+}
+
+.tournamentslist .name{
+    font-weight: bold;
+}
+
+.tournamentslist .date{
+    text-align: right;
+    white-space: nowrap;
+}
+.tournamentslist .city{
+
+}
+/* tournament details */
+.tournamentdetails{
+
+}
+
+.tournamentdetails .infos{
+
+    width: 100%;
+}
+.tournamentdetails .infos .location{
+    padding: 15px 0;
+    border-bottom: 1px solid silver;
+}
+.tournamentdetails .infos .dates{
+
+    padding: 15px 0;
+    border-bottom: 1px solid silver;
+}
+.tournamentdetails .infos .link{
+    padding: 15px 0;
+    text-align: right;
+    font-weight: bold;
+}
+
+.tournamentdetails .ranking{
+    float: left;
+    width: 45%;
+    margin: 3px;
+    overflow: hidden;
+}
+.tournamentdetails .ranking table{
+    width: 100%;
+    border-radius: 3px;
+}
+
+.tournamentdetails .ranking .roster{
+    width: 25px;
+}
+
+/* GMap tournement detail page */
+iframe#Gmap{
+    border: none;
+}
+
+
+.ranking .rank1,
+.ranking .rank2,
+.ranking .rank3{
+    font-weight: bold;
+    background: #970808;
+    white-space:nowrap;
+}
+.ranking .rank1{color: gold;}
+.ranking .rank2{color: #ccc;}
+.ranking .rank3{color: #ff9933;}
+
+/* User account creation */
+.hname{ /*honeypot*/
+    display: none;
+}
+
+
+/* Tournament form */
+.tournamentform fieldset{
+    background: #FFFFF0;
+    border: 1px solid #ff9933;
+    position: relative;
+
+    width: 100%;
+}
+
+.tournamentform .coachslist{
+    display: inline-block;
+    width: 370px;
+    vertical-align: top;
+}
+
+.tournamentform .coachslist fieldset{
+    padding-right: 170px;
+}
+
+.tournamentform .coachslist #selectCoaches,
+.tournamentform .coachslist #newCoachName
+{
+    max-width: 200px;
+}
+
+
+.tournamentform .buttons{
+   position:absolute;
+    right: 5px;
+    top: 40%;
+
+}
+
+.tournamentform .participantslist{
+    display: inline-block;
+    width: 200px;
+    vertical-align: middle;
+    margin-left: 10px;
+
+}
+
+.tournamentform .participantslist ol li{
+    list-style: inside decimal;
+
+    background: #FEB30A;
+
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+
+    font-weight: bold;
+    position: relative;
+
+    cursor: move;
+
+}
+
+.tournamentform .participantslist ol li .delete{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+
+
+
+
